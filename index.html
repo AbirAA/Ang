@@ -1,9 +1,22 @@
+
 <!DOCTYPE html>
-<html>
+<html ng-app="myFirstApp">
+<head>
+    <script src="angular.min.js" ></script>
+    <script src="app.js" ></script>
+</head>
 <body>
 
 <h1>My First Heading</h1>
-<p>My          ff first paragraph.</p>
+<p>My first paragraph.</p>
+<div ng-controller="myFirstController">
+    {{sayHello()}}
+
+    <input type="text" ng-model="name">
+    Echoes : {{name}}
+
+
+</div>
 
 </body>
 </html>

@@ -1,0 +1,130 @@
+
+h1 {
+    color: #4caf50;
+    font-family: verdana;
+    font-size: 300%;
+}
+.home{
+text-decoration: none;
+font-family: 'Oswald', sans-serif;
+font-size: 4em;
+color: #000000;
+margin-left: 25%;
+
+
+}
+.error {
+  color: red;
+  font-weight: bold;
+  display: none;
+}
+
+.loading-icon {
+  position: absolute;
+  left: 50%;
+  top: 10px;
+}
+
+
+
+
+a:link {
+    color: rgb(0, 0, 0);
+}
+
+
+/* mouse over link */
+a:hover {
+    color: rgb(173, 133, 4);
+}
+
+/* selected link */
+.restaurant span{
+  margin-left: 35%;
+  
+  font-size: 6em;
+}
+.First .takes a {
+  font-size: 2em;
+  
+}
+
+.First a {
+  font-size: 2em;
+  text-decoration: none;
+  color: rgb(173, 133, 4);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.First a:hover {
+  font-size: 2.4em;
+  text-decoration: none;
+  color: rgb(173, 133, 4);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.First span {
+  font-size: 2em;
+  text-decoration: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.First h3{
+  
+    font-size: 3em;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(173, 133, 4);
+  
+}
+.First h2{
+  
+  font-size: 1.5em;
+  text-decoration: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.categories ul{
+list-style: none;
+}
+.categories li{
+  margin-top: 1em;
+}
+.categories li[ui-sref] {
+  font-size: 1.4em;
+  font-family: sans-serif;
+}
+.categories li[ui-sref]:hover {
+  
+  cursor: pointer;
+  color: rgb(173, 133, 4);
+  font-family: sans-serif;
+}
+.items span{
+  font-size: 2em;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.items .takes a {
+  font-size: 2em;
+  
+}
+
+.items a {
+  font-size: 2em;
+  text-decoration: none;
+  color: rgb(173, 133, 4);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.items a:hover {
+  font-size: 2.4em;
+  text-decoration: none;
+  color: rgb(173, 133, 4);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.items li{
+  font-size: 1.4em;
+  font-family: sans-serif;
+  list-style: none;
+  margin-top: 1em; 
+
+}

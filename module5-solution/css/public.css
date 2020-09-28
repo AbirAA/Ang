@@ -1,0 +1,317 @@
+/* HOME PAGE */
+.container .jumbotron {
+  box-shadow: 0 0 50px #3F0C1F;
+  border: 2px solid #3F0C1F;
+}
+
+#menu-tile, #specials-tile, #map-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+}
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu-tile {
+  background: url('../images/menu-tile.jpg') no-repeat;
+  background-position: center;
+}
+#specials-tile {
+  background: url('../images/specials-tile.jpg') no-repeat;
+  background-position: center;
+}
+#menu-tile span, #specials-tile span, #map-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+/* END HOME PAGE */
+
+/* MENU CATEGORIES PAGE */
+.category-tile {
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;
+}
+.category-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+.category-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-categories-title + div {
+  margin-bottom: 50px;
+}
+/* END MENU CATEGORIES PAGE */
+
+/* SINGLE CATEGORY PAGE */
+.menu-item-tile {
+  margin-bottom: 25px;
+}
+.menu-item-tile hr {
+  width: 80%;
+}
+.menu-item-tile .menu-item-price {
+  font-size: 1.1em;
+  text-align: right;
+  margin-top: -15px;
+  margin-right: -15px;
+}
+.menu-item-tile .menu-item-price span {
+  font-size: .6em;
+}
+.menu-item-photo {
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+  padding: 0;
+  margin-right: -15px;
+  margin-left: auto;
+  margin-bottom: 20px;
+  max-width: 250px;
+}
+.menu-item-photo div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  background-color: #557c3e;
+  text-align: center;
+}
+.menu-item-description {
+  padding-right: 30px;
+}
+h3.menu-item-title {
+  margin: 0 0 10px;
+}
+.menu-item-details {
+  font-size: .9em;
+  font-style: italic;
+}
+/* END SINGLE CATEGORY PAGE */
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .container .jumbotron {
+    background: url('../images/jumbotron_1200.jpg') no-repeat;
+    height: 675px;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Home Page */
+  .container .jumbotron {
+    background: url('../images/jumbotron_992.jpg') no-repeat;
+    height: 558px;
+  }
+  /* End Home Page */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+  .container .jumbotron {
+    background: url('../images/jumbotron_768.jpg') no-repeat;
+    height: 432px;
+  }
+  /* End Home Page */
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Home Page */
+  .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+  }
+  #menu-tile, #specials-tile {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+
+  .menu-item-photo {
+    margin-right: auto;
+  }
+  .menu-item-tile .menu-item-price {
+    text-align: center;
+  }
+  .menu-item-description {
+    text-align: center;;
+  }
+}
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Home page */
+  #menu-tile, #specials-tile {
+    width: 280px;
+    margin: 0 auto 15px;
+  }
+
+  .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
+}
+
+/*Sign up Form */
+
+
+.signup-left input[type], select {
+  width: 50%;
+  margin-left: 2em;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.signup-left label{
+  margin-left: 2em;
+}
+.signup-left button{
+  width: 50%;
+  margin-left: 2em;
+  margin-top: 2em;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: medium;
+  font-weight: bolder;
+  background-color:  #557c3e;
+}
+.signup-left button:hover{
+  width: 50%;
+  margin-left: 2em;
+  margin-top: 2em;
+  background-color: #2a411d;
+  border-color: #2a411d;
+}
+.signup{
+    padding: 20px;
+    margin-bottom: 45%;
+    
+}
+.signup-left {
+  background-color: #f6b319;
+  width: 40%;
+  width: 48%;
+  float: left;
+  padding: 20px;
+  
+}
+.signup-right{
+  background-color: #557c3e;
+  width: 50%;
+    float: left;
+    margin-left: 1em;
+  
+}
+.signup-right h1{
+  margin-left: 1em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+
+}
+.signup h2{
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 4em;
+  margin-bottom: 1em;
+  color: #f6b319;
+}
+
+
+.signup-left .ng-touched.ng-valid {
+  border: 2px green solid;
+}
+
+.signup-left .ng-touched.ng-invalid {
+  border: 5px red solid;
+}
+
+.menu-item-tile .row{
+  background-color: #3F0C1F;
+  margin-left: 2em;
+  width: 100%;
+}
+
+
+/* Your information */
+
+
+
+.myinfo{
+  padding: 20px;
+  margin-bottom: 40%;
+  
+}
+#myinfo-form{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 3em;
+  color: #f6b319;
+}
+
+.myinfo-me {
+background-color: #f6b319;
+width: 40%;
+width: 48%;
+float: left;
+padding: 20px;
+
+}
+.myinfo-dish div{
+
+width: 50%;
+  float: left;
+  margin-left: 1em;
+
+}
+
+.myinfo-alert div{
+  background-color: #660e2f;;
+  color: rgb(255, 255, 255);
+  border: 0ch;
+}
+.myinfo-alert h2{
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.myinfo-alert button{
+  margin: 1em;
+  background-color: rgb(255, 255, 255);
+  color: #3F0C1F;
+  font-size: 2em;
+  font-weight: bold;
+  
+}
+.myinfo-alert button:hover{
+  background-color: #f6b319;
+}

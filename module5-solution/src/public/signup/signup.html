@@ -1,0 +1,130 @@
+<div class="signup">
+    
+
+    <div ng-if="!(signUpCtrl.saved)"><h2>Sign Up Now ! </h2></div>
+    <div class="signup-left">
+      <div class="signup-innerwhitebox">
+        <fieldset>
+          <!-- <legend></legend> -->
+  
+            <form name="signupForm" novalidate>
+                
+                    <div class="form-group">
+                        <label for="firstName">First Name</label><br>
+                        <input type="text"
+                              class="form-control"
+                              id="firstName"
+                              name="firstName"
+                              placeholder="First Name"
+                              ng-model="signupCtrl.userInfo.firstName"
+                              minlength="4"
+                              maxlength="15"
+                              required>
+                        <span ng-if="signupForm.firstName.$error.required && signupForm.firstName.$touched">
+                            <small>First name is required</small>
+                        </span>
+                        <span ng-if="signupForm.firstName.$error.minlength">
+                            <small>Name must be at least 4 characters long !</small>
+                        </span>
+                        <span ng-if="signupForm.firstName.$error.maxlength">
+                            <small>Name must be less than 15 characters long !</small>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label><br>
+                        <input type="text"
+                              class="form-control"
+                              id="lastName"
+                              name="lastName"
+                              placeholder="Last Name"
+                              ng-model="signupCtrl.userInfo.lastName"
+                              required
+                              minlength="4"
+                              maxlength="15">
+                        <span ng-if="signupForm.lastName.$error.required && signupForm.lastName.$touched">
+                            <small>Last name is required</small>
+                        </span>
+                        <span ng-if="signupForm.lastName.$error.minlength">
+                            <small>Last name must be at least 4 characters long !</small>
+                        </span>
+                        <span ng-if="signupForm.lastName.$error.maxlength">
+                            <small>Last name must be less than 15 characters long !</small>
+                        </span>
+                    </div>
+                      
+                <div class="form-group">
+                    <label for="emailAddress">Email</label><br>
+                    <input type="email"
+                          class="form-control"
+                          id="emailAddress"
+                          name="emailAddress"
+                          placeholder="Email"
+                          ng-model="signupCtrl.userInfo.emailAddress"
+                          required>
+                    <span ng-if="signupForm.emailAddress.$invalid && signupForm.emailAddress.$touched">
+                        <small>Must be a valid email address: handle@domain format</small>
+                    </span>
+                </div>
+
+                
+
+             
+                <div class="form-group">
+                    <label for="phoneNumber">Phone</label><br>
+                    <input type="tel"
+                          class="form-control"
+                          id="phoneNumber"
+                          name="phoneNumber"
+                          ng-model="signupCtrl.userInfo.phoneNumber"
+                          placeholder="Phone ###-###-####"
+                          pattern="(\d{3})-(\d{3})-(\d{4})">
+                    <span ng-if="signupForm.phoneNumber.$invalid && signupForm.phoneNumber.$touched">
+                        <small>Phone must be in the format ###-###-####</small>
+                    </span>
+                </div>
+                <div class="form-group">
+                    <label for="favouriteDish">Favourite Dish</label><br>
+                    <input type="text"
+                          class="form-control"
+                          id="favouriteDish"
+                          name="favouriteDish"
+                          placeholder="Short Code of Your Favourite Dish"
+                          ng-model="signupCtrl.userInfo.favouriteDish"
+                          ng-blur="signupCtrl.validateFavdish()">
+                    <span ng-if="signupCtrl.itemSearched && !signupCtrl.validShortCode">
+                        <small>No such menu number exists</small>
+                    </span>
+  
+  
+                </div>
+            
+                <button class="btn btn-success"
+                        ng-disabled="signupForm.$invalid"
+                        ng-click="signupCtrl.setInfo()">Submit</button>
+                    
+            </form>
+        </fieldset>
+      </div>
+    </div>  
+    
+  
+    <div class="signup-right">
+      <div class="signup-innerwhitebox">
+            <div class="signup-searchresults" ng-if="signupCtrl.validShortCode">
+                <h1>Your favourite dish : </h1>
+              <menu-item menu-item="signupCtrl.userInfo.MenuItem"></menu-item>
+            </div>
+          </div>
+      </div>
+
+
+      <div class="signup-savemessage" ng-if="signupCtrl.saved">
+        <p class="alert alert-success">Your information has been saved!</p>
+    </div>
+    </div>  
+
+    
+  
+    
+  
+  
